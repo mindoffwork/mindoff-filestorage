@@ -12,10 +12,10 @@ df = df.astype(str)
 
 # Export the DataFrame to a JSON file
 output_directory = f'public/{sheet_name}/'  # Update this with desired output directory
-output_file_path = os.path.join(output_directory, 'output_file.json')  # Change the output file name as needed
+output_file_path = os.path.join(output_directory, 'topicslist.json')  # Change the output file name as needed
 
 # Create the directory if it doesn't exist
 os.makedirs(output_directory, exist_ok=True)
-df.to_json(output_file_path, orient='records', lines=False, compression='gzip')
+df.to_json(output_file_path, orient='records', lines=False)
 
 print(f"Data exported to \'{output_file_path}\' successfully.")
