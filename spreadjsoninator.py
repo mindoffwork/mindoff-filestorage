@@ -11,7 +11,7 @@ df.columns = df.columns.str.lower()
 df = df.astype(str)
 
 # Export the DataFrame to a JSON file
-output_directory = f'public/{sheet_name}/'  # Update this with desired output directory
+output_directory = f'dist/{sheet_name}/'  # Update this with desired output directory
 output_file_path = os.path.join(output_directory, 'topicslist.json')  # Change the output file name as needed
 
 # Create the directory if it doesn't exist
