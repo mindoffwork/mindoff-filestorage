@@ -62,6 +62,10 @@ for index, row in posts_df.iterrows():
     output_file_path = os.path.join(output_directory, row['link'], 'post.json')
     os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
     row.to_json(output_file_path, orient='index', lines=False)
+    html_file_path = os.path.join(output_directory, row['link'], 'post.html')
+    if not os.path.exists(html_file_path):
+        with open(html_file_path, 'w') as html_file:
+            html_file.write('')
 print("Exported successfully -- Posts")
 print("Process Completed 😇")
 
