@@ -61,7 +61,7 @@ for index, row in posts_df.iterrows():
     # Construct the file path
     output_file_path = os.path.join(output_directory, row['link'], 'post.json')
     os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
-    row.to_json(output_file_path, orient='records', lines=False)
+    row.to_json(output_file_path, orient='index', lines=False)
 print("Exported successfully -- Posts")
 print("Process Completed 😇")
 
