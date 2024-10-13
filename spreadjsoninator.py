@@ -17,7 +17,7 @@ sheet_name = 'topics'
 topics_df = pd.read_excel(excel_file_path, sheet_name=sheet_name)
 topics_df.columns = topics_df.columns.str.lower()
 topics_df = topics_df.astype(str)
-output_file_path = os.path.join(output_directory, 'topicslist.json')  
+output_file_path = os.path.join(output_directory, 'topics.json')  
 os.makedirs(output_directory, exist_ok=True)
 topics_df.to_json(output_file_path, orient='records', lines=False)
 print("Exported successfully -- Topics")
