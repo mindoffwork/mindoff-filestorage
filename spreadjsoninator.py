@@ -50,3 +50,4 @@ homepage_posts_list = {
 with open(output_directory + 'posts_home.json', 'w') as json_file:
     json.dump(homepage_posts_list, json_file)
 print("Exported successfully -- Home Posts")
+print("Process Completed 😇")
