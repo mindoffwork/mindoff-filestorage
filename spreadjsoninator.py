@@ -1,7 +1,10 @@
 import os
 import pandas as pd
 import json
+import warnings
 
+# Suppress Warnings
+warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
 # Load the Excel file
 excel_file_path = 'db_sheet.xlsx'  # Update this with your file path
