@@ -45,9 +45,9 @@ print("Exported successfully -- Topicwise Posts")
 
 # 2b. HomePage Postlist Json
 homepage_posts_list = {
-    "is_featured": posts_df[posts_df["is_featured"]].to_dict(orient='records'),
-    "is_popular": posts_df[posts_df["is_popular"]].to_dict(orient='records'),
-    "is_recommended": posts_df[posts_df["is_recommended"]].to_dict(orient='records'),
+    "is_featured": posts_df[posts_df["is_featured"]].sort_values(by="updated_on", ascending=False).to_dict(orient='records'),
+    "is_popular": posts_df[posts_df["is_popular"]].sort_values(by="updated_on", ascending=False).to_dict(orient='records'),
+    "is_recommended": posts_df[posts_df["is_recommended"]].sort_values(by="updated_on", ascending=False).to_dict(orient='records'),
 }
 # Write to JSON file
 with open(output_directory + 'posts_home.json', 'w') as json_file:
