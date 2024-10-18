@@ -2,9 +2,56 @@ import os
 import pandas as pd
 import json
 import warnings
+import re
+import markdown
+from bs4 import BeautifulSoup
 
 # Suppress Warnings
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
+
+### SUPPORTING FUNCTIONS ###
+def replace_gist_links(md_text):
+    return re.sub(r"^\s*(https://gist\.github\.com/[^\s]+)\s*$", 
+                  lambda m: f'<script id="gist" src="{m.group(1).replace("https://gist.github.com/", "")}"></script>', 
+                  md_text, flags=re.MULTILINE)
+
+def generate_json_from_html(html):
+    soup = BeautifulSoup(html, 'html.parser')
+    elements = []
+    current_html_content = ""
+
+    for el in soup.contents:
+        if el.name == 'script':
+            if current_html_content:
+                elements.append({"name": "text", "content": current_html_content.strip()})
+                current_html_content = ""
+            elements.append({"name": "script", "content": "gist", "link": el.get('src', '')})
+        elif el.name == 'p' and len(el.contents) == 1 and el.img:
+            if current_html_content:
+                elements.append({"name": "text", "content": current_html_content.strip()})
+                current_html_content = ""
+            elements.append({"name": "img", "content": el.img.get('alt', ''), "link": el.img.get('src', '')})
+        else:
+            current_html_content += str(el).replace('\n', '').strip()
+
+    if current_html_content:  # Add any remaining HTML content
+        elements.append({"name": "text", "content": current_html_content.strip()})
+
+    return json.dumps(elements, indent=4)
+
+def process_md_files(df):
+    for link in df['link']:
+        md_path = os.path.join("posts/" + link, 'post.md')
+        json_path = os.path.join("posts/" + link, 'post_body.json')
+        try:
+            with open(md_path, 'r', encoding='utf-8') as f:
+                md_text = f.read()
+            html_output = markdown.markdown(replace_gist_links(md_text))
+            print(html_output)
+            with open(json_path, 'w', encoding='utf-8') as json_file:
+                json_file.write(generate_json_from_html(html_output))
+        except FileNotFoundError:
+            pass
 
 # Load the Excel file
 excel_file_path = 'db_sheet.xlsx'  # Update this with your file path
@@ -62,15 +109,22 @@ print("Exported successfully -- Home Posts")
 output_directory = 'posts/'
 for index, row in posts_df.iterrows():
     # Construct the file path
-    output_file_path = os.path.join(output_directory, row['link'], 'post.json')
-    os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
-    row.to_json(output_file_path, orient='index', lines=False)
-    html_file_path = os.path.join(output_directory, row['link'], 'post.html')
-    if not os.path.exists(html_file_path):
-        with open(html_file_path, 'w') as html_file:
-            html_file.write('')
+    post_head_file_path = os.path.join(output_directory, row['link'], 'post_head.json')
+    os.makedirs(os.path.dirname(post_head_file_path), exist_ok=True)
+    row.to_json(post_head_file_path, orient='index', lines=False)
+    post_md_file_path = os.path.join(output_directory, row['link'], 'post.md')
+    post_body_file_path = os.path.join(output_directory, row['link'], 'post_body.json')
+    if not os.path.exists(post_md_file_path):
+        with open(post_md_file_path, 'w') as md_file:
+            md_file.write('')
+    try:
+        with open(post_md_file_path, 'r', encoding='utf-8') as f:
+            md_text = f.read()
+        html_output = markdown.markdown(replace_gist_links(md_text))
+        with open(post_body_file_path, 'w', encoding='utf-8') as json_file:
+            json_file.write(generate_json_from_html(html_output))
+    except FileNotFoundError:
+        pass
 print("Exported successfully -- Posts")
 print("Process Completed 😇")
 
-
-### SUPPORTING FUNCTIONS ###

@@ -1,0 +1,51 @@
+[
+    {
+        "name": "text",
+        "content": "<p><strong>Prerequisites</strong></p><p>Ensure your React.js or Next.js app is initialized without Tailwind CSS and configured for JavaScript. If you prefer TypeScript, simply substitute the <code>.js</code> files with <code>.tsx</code> files in the following steps.</p><h2>1. Install Tailwind CSS, PostCSS, and Autoprefixer</h2><p>Tailwind CSS works best when paired with PostCSS and Autoprefixer. These tools help transform your CSS with JavaScript plugins, enabling features like browser compatibility through auto prefixing, minification, rule nesting, and custom properties. Luckily, React.js and Next.js come with built-in support for PostCSS, making it easy to integrate Tailwind CSS.</p><p>Open your terminal and run the command: <code>npm install tailwindcss postcss autoprefixer</code></p><p>Once the installation is complete, initialize Tailwind CSS in your project by generating its configuration files:</p>"
+    },
+    {
+        "name": "script",
+        "content": "gist",
+        "link": "mindoffwork/6fded21be55d5c437ff32743fd9c687d"
+    },
+    {
+        "name": "text",
+        "content": "<p>This command creates two essential files:</p><ul><li><strong><code>tailwind.config.js</code></strong>: Customize Tailwind's default configuration here.</li><li><strong><code>postcss.config.js</code></strong>: Manages PostCSS processing.</li></ul><h2>2. Configure Tailwind CSS</h2><p>Next, open the <code>tailwind.config.js</code> file and define the paths to your components and pages. This step is crucial as it ensures Tailwind purges unused CSS in production, optimizing your app's performance.</p>"
+    },
+    {
+        "name": "script",
+        "content": "gist",
+        "link": "mindoffwork/880b0159354ae1ab5c4deda9f2baede5"
+    },
+    {
+        "name": "text",
+        "content": "<p>If you prefer to use a <code>src</code> folder to contain your app's source code, keep the above configuration. If your project structure differs, simply adjust the <code>content</code> paths:</p>"
+    },
+    {
+        "name": "script",
+        "content": "gist",
+        "link": "mindoffwork/a1663f25e8b34ab01770c63dc4a547b2"
+    },
+    {
+        "name": "text",
+        "content": "<h2>3. Add Tailwind Directives to Your CSS</h2><p>Now it\u2019s time to ensure Tailwind's styles are applied globally. Open your <code>global.css</code> file and add the following Tailwind directives. If you use a custom CSS file, place this code in your root CSS file to ensure it loads first in your HTML layout.</p>"
+    },
+    {
+        "name": "script",
+        "content": "gist",
+        "link": "mindoffwork/35bff86f9a6fe95a0d8d58084445e060"
+    },
+    {
+        "name": "text",
+        "content": "<h2>4. Start Using Tailwind CSS in Your Components</h2><p>With everything set up, you're ready to use Tailwind CSS classes in your components! Here\u2019s a quick example of creating a simple button using Tailwind CSS:</p>"
+    },
+    {
+        "name": "script",
+        "content": "gist",
+        "link": "mindoffwork/dcf55fe31143b38f1c89aba51b33d326"
+    },
+    {
+        "name": "text",
+        "content": "<p><strong>Let\u2019s Test!</strong></p><p>Now that the setup is complete, run or restart your application to see Tailwind CSS in action! Take advantage of Tailwind\u2019s extensive customization options to create a unique design that fits your project needs.</p>"
+    }
+]
