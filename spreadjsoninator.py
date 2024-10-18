@@ -116,13 +116,14 @@ for index, row in posts_df.iterrows():
     post_body_file_path = os.path.join(output_directory, row['link'], 'post_body.json')
     if not os.path.exists(post_md_file_path):
         with open(post_md_file_path, 'w') as md_file:
-            md_file.write('')
+            md_file.write("")
     try:
         with open(post_md_file_path, 'r', encoding='utf-8') as f:
             md_text = f.read()
         html_output = markdown.markdown(replace_gist_links(md_text))
         with open(post_body_file_path, 'w', encoding='utf-8') as json_file:
-            json_file.write(generate_json_from_html(html_output))
+            generated_json_from_html = json.loads(generate_json_from_html(html_output))
+            json.dump(generated_json_from_html, json_file)
     except FileNotFoundError:
         pass
 print("Exported successfully -- Posts")
