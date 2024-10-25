@@ -87,7 +87,7 @@ posts_df['updated_on'] = posts_df['updated_on'].dt.strftime('%Y-%m-%d')
 topic_list = posts_df['topic'].unique()
 for topic in topic_list:
     filtered_by_topic_df = posts_df[posts_df['topic'] == topic]
-    filtered_by_topic_df = filtered_by_topic_df.drop(['is_featured', 'is_popular', 'is_recommended'], axis=1)
+    filtered_by_topic_df = filtered_by_topic_df.drop(['is_featured', 'is_popular'], axis=1)
     output_file_path = os.path.join(output_directory, f'posts_topic__{topic}.json')
     os.makedirs(output_directory, exist_ok=True)
     filtered_by_topic_df.to_json(output_file_path, orient='records', lines=False)
