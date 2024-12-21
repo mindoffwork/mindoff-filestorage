@@ -142,8 +142,11 @@ https://gist.github.com/mindoffwork/74c65649d075d61576359be557e16a58
 ## 6. Security: Play It Smart
 
 a. **Protect Your Keys:** Never share your private keys, and rotate them regularly.
+
 b. **Avoid Storing Passwords:** Don’t save passwords in WinSCP, especially for production servers.
+
 c. **Enable Passphrase Protection:** Always use a passphrase for added security on your private key.
+
 d. **Monitor Access Logs:** Regularly check SSH login histories to detect any unauthorized access.
 
 SSH via Putty and WinSCP is just the tip of the iceberg when it comes to server management and deployment. While alternatives like FileZilla offer cross-platform support, it’s best to stick with one tool for consistency and efficiency. With the right software in hand, we can simplify server management and focus on what really matters.
