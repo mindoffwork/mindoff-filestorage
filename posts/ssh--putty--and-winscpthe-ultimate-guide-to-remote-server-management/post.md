@@ -71,24 +71,16 @@ To make it easier, we’ll walk through the process of generating your own SSH k
 
 #### Installing Putty
 
-1. Download Putty from the official source: [putty.org](https://www.putty.org/)
-2. Run the installer and follow the on-screen instructions to install it.
+- Download Putty from the official source: [putty.org](https://www.putty.org/)
+- Run the installer and follow the on-screen instructions to install it.
 
 #### Steps to Generate and Use a Key Pair with PuttyGen
 
-1. **Open PuttyGen**: Launch the program (it's part of the Putty suite).
-2. **Generate a New Key Pair**:
-   a. In the PuttyGen window, click **Generate**.
-   b. Move your mouse around the window to create randomness, which is essential for security.
-3. **Configure Your Key**:
-   - **Key Comment**: Add a descriptive label (e.g., `MyServerKey`) to identify the key. Use simple characters like hyphens or underscores.
-   - **Passphrase (Optional)**: Add a passphrase for extra security. This protects your private key and requires the passphrase whenever you use it.
-4. **Save Your Keys**:
-   - **Private Key**: Click **Save private key** and store it securely (like a password).
-   - **Public Key**: Copy the public key from the PuttyGen window.
-5. **Add the Public Key to Your Server**:
-   - Access your server and open the `~/.ssh/authorized_keys` file for the user account.
-   - Paste the public key (starting with `ssh-rsa`) into the file on a single line.
+a. **Open PuttyGen**: Launch the program (it's part of the Putty suite).
+b. **Generate a New Key Pair**: In the PuttyGen window, click **Generate** and move your mouse around the window to create randomness, which is essential for security.
+c. **Configure Your Key**: Add a descriptive label in the **Key Comment** field (e.g., `MyServerKey`) to identify the key. Use simple characters like hyphens or underscores. Optionally, add a **passphrase** for extra security, which protects your private key and requires the passphrase whenever you use it.
+d. **Save Your Keys**: Save the **private key** securely by clicking **Save private key**. Copy the **public key** directly from the PuttyGen window.
+e. **Add the Public Key to Your Server**: Access your server and open the `~/.ssh/authorized_keys` file for the user account. Paste the public key (starting with `ssh-rsa`) into the file on a single line.
 
 <aside>
 🦾 Pro Tip: Use a naming convention like `my_server_private.ppk` and `my_server_public.pub` when you save your private and public keys. It’ll save your sanity.
@@ -98,10 +90,10 @@ To make it easier, we’ll walk through the process of generating your own SSH k
 
 **Example: Accessing SSH on Google Compute Engine for Public Key**
 
-1. Log in to your Google Cloud Console.
-2. Navigate to the Compute Engine and locate your VM instance.
-3. Edit the VM instance and navigate to SSH section
-4. Add the copied public key to the VM’s metadata under the “SSH Keys” section.
+a. Log in to your Google Cloud Console.
+b. Navigate to the Compute Engine and locate your VM instance.
+c. Edit the VM instance and navigate to SSH section
+d. Add the copied public key to the VM’s metadata under the “SSH Keys” section.
 
 ![Google Compute Engine SSH Key Addition Screenshot](https://cdn.jsdelivr.net/gh/mindoffwork/mindoff-filestorage@root/images/screenshots/google_compute_engine_ssh_key_addition.png)
 
@@ -109,15 +101,15 @@ And that’s it! You’re ready to connect. 🚀
 
 ## 4. Connecting to a Server with Putty
 
-1. Open **Putty**.
-2. Navigate to “**Connection > SSH > Auth**” and load your private key
+a. Open **Putty**.
+b. Navigate to “**Connection > SSH > Auth**” and load your private key
 
 ![Putty Private Key selection screenshot](https://cdn.jsdelivr.net/gh/mindoffwork/mindoff-filestorage@root/images/screenshots/putty_private_key_selection_ss.png)
 
-3. Enter the **IP address** of your server in the “Host Name” field.
-4. Set the **Port** to **22** (the default for SSH).
-5. Optionally, save the session by going to “Session,” naming it, and clicking “Save.”
-6. Click “Open” to start the SSH connection. Enter your **user login ID** (the key comment you entered while generating the keys) when prompted.
+c. Enter the **IP address** of your server in the “Host Name” field.
+d. Set the **Port** to **22** (the default for SSH).
+e. Optionally, save the session by going to “Session,” naming it, and clicking “Save.”
+f. Click “Open” to start the SSH connection. Enter your **user login ID** (the key comment you entered while generating the keys) when prompted.
 
 **What’s That Fingerprint Warning?**
 
@@ -132,9 +124,9 @@ The first time you connect, Putty will ask you to confirm the server’s fingerp
 
 ### **Connecting to Your Server**
 
-1. Download WinSCP: [winscp.net](https://winscp.net/eng/download.php)
-2. Enter your server’s **IP address**, **username**, and **port** (22 for SSH) and Import your private key if necessary.
-3. Import your private key if necessary. Alternatively, you can import saved Putty sessions by selecting **Tools > Import Sites > Putty > "your_putty_session"**.
+a. Download WinSCP: [winscp.net](https://winscp.net/eng/download.php)
+b. Enter your server’s **IP address**, **username**, and **port** (22 for SSH) and Import your private key if necessary.
+c. Import your private key if necessary. Alternatively, you can import saved Putty sessions by selecting **Tools > Import Sites > Putty > "your_putty_session"**.
 
 ### **Moving Files**
 
@@ -149,9 +141,9 @@ https://gist.github.com/mindoffwork/74c65649d075d61576359be557e16a58
 
 ## 6. Security: Play It Smart
 
-1. **Protect Your Keys:** Never share your private keys, and rotate them regularly.
-2. **Avoid Storing Passwords:** Don’t save passwords in WinSCP, especially for production servers.
-3. **Enable Passphrase Protection:** Always use a passphrase for added security on your private key.
-4. **Monitor Access Logs:** Regularly check SSH login histories to detect any unauthorized access.
+a. **Protect Your Keys:** Never share your private keys, and rotate them regularly.
+b. **Avoid Storing Passwords:** Don’t save passwords in WinSCP, especially for production servers.
+c. **Enable Passphrase Protection:** Always use a passphrase for added security on your private key.
+d. **Monitor Access Logs:** Regularly check SSH login histories to detect any unauthorized access.
 
 SSH via Putty and WinSCP is just the tip of the iceberg when it comes to server management and deployment. While alternatives like FileZilla offer cross-platform support, it’s best to stick with one tool for consistency and efficiency. With the right software in hand, we can simplify server management and focus on what really matters.
