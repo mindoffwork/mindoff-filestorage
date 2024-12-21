@@ -78,8 +78,8 @@ To make it easier, we’ll walk through the process of generating your own SSH k
 
 1. **Open PuttyGen**: Launch the program (it's part of the Putty suite).
 2. **Generate a New Key Pair**:
-   - In the PuttyGen window, click **Generate**.
-   - Move your mouse around the window to create randomness, which is essential for security.
+   a. In the PuttyGen window, click **Generate**.
+   b. Move your mouse around the window to create randomness, which is essential for security.
 3. **Configure Your Key**:
    - **Key Comment**: Add a descriptive label (e.g., `MyServerKey`) to identify the key. Use simple characters like hyphens or underscores.
    - **Passphrase (Optional)**: Add a passphrase for extra security. This protects your private key and requires the passphrase whenever you use it.
