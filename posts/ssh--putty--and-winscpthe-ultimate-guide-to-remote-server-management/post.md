@@ -87,7 +87,7 @@ To make it easier, we’ll walk through the process of generating your own SSH k
 5. **Adding the Public Key to Your Server:** Access your server’s configuration and locate the **authorized_keys** file (usually in the `~/.ssh/` directory for the user you’ll log in as) and Paste the public key (the one that starts with `ssh-rsa`) into the **authorized_keys** file. Make sure the key is all on one line and there are no extra spaces.
 
 <aside>
-🦾 **Pro Tip:** Use a naming convention like `my_server_private.ppk` and `my_server_public.pub` when you save your private and public keys. It’ll save your sanity.
+🦾 Pro Tip: Use a naming convention like `my_server_private.ppk` and `my_server_public.pub` when you save your private and public keys. It’ll save your sanity.
 </aside>
 
 ![Putty Key Generator Screenshot](https://cdn.jsdelivr.net/gh/mindoffwork/mindoff-filestorage@root/images/screenshots/puttyGen_ss.png)
@@ -144,7 +144,7 @@ For root-level transfers, use Putty to execute the following commands:
 https://gist.github.com/mindoffwork/74c65649d075d61576359be557e16a58
 
 <aside>
-🦾 **Pro Tip:** Keep both Putty and WinSCP open for maximum efficiency. It’s the dream team of server management.
+🦾 Pro Tip: Keep both Putty and WinSCP open for maximum efficiency. It’s the dream team of server management.
 </aside>
 
 ## 6. Security: Play It Smart
