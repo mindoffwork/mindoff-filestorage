@@ -99,7 +99,8 @@ To make it easier, we’ll walk through the process of generating your own SSH k
 3. Edit the VM instance and navigate to SSH section
 4. Add the copied public key to the VM’s metadata under the “SSH Keys” section.
 
-!https://cdn.jsdelivr.net/gh/mindoffwork/mindoff-filestorage@root/images/screenshots/google_compute_engine_ssh_key_addition.png
+![Google Compute Engine SSH Key Addition Screenshot](https://cdn.jsdelivr.net/gh/mindoffwork/mindoff-filestorage@root/images/screenshots/google_compute_engine_ssh_key_addition.png)
+Google Compute Engine SSH Key Addition Screenshot
 
 And that’s it! You’re ready to connect. 🚀
 
@@ -108,12 +109,13 @@ And that’s it! You’re ready to connect. 🚀
 1. Open **Putty**.
 2. Navigate to “**Connection > SSH > Auth**” and load your private key
 
-!https://cdn.jsdelivr.net/gh/mindoffwork/mindoff-filestorage@root/images/screenshots/putty_private_key_selection_ss.png
+![Putty Private Key selection screenshot](https://cdn.jsdelivr.net/gh/mindoffwork/mindoff-filestorage@root/images/screenshots/putty_private_key_selection_ss.png)
+Putty Private Key selection screenshot
 
-1. Enter the **IP address** of your server in the “Host Name” field.
-2. Set the **Port** to **22** (the default for SSH).
-3. Optionally, save the session by going to “Session,” naming it, and clicking “Save.”
-4. Click “Open” to start the SSH connection. Enter your **user login ID** (the key comment you entered while generating the keys) when prompted.
+3. Enter the **IP address** of your server in the “Host Name” field.
+4. Set the **Port** to **22** (the default for SSH).
+5. Optionally, save the session by going to “Session,” naming it, and clicking “Save.”
+6. Click “Open” to start the SSH connection. Enter your **user login ID** (the key comment you entered while generating the keys) when prompted.
 
 **What’s That Fingerprint Warning?**
 
@@ -122,7 +124,9 @@ The first time you connect, Putty will ask you to confirm the server’s fingerp
 - **Click Yes** if it matches your server’s details or click **allow once** if you wish to review it every time you login.
 - **Click No** if you’re unsure or suspect foul play.
 
-!https://cdn.jsdelivr.net/gh/mindoffwork/mindoff-filestorage@root/images/screenshots/putty_connection_screen_ss.png
+![Putty Session Creation and Saving Screenshot](https://cdn.jsdelivr.net/gh/mindoffwork/mindoff-filestorage@root/images/screenshots/putty_connection_screen_ss.png)
+
+Putty Session Creation and Saving Screenshot
 
 ## 5. Transfering files using WinSCP
 
