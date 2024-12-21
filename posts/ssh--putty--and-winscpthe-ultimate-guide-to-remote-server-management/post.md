@@ -69,22 +69,26 @@ To make it easier, we’ll walk through the process of generating your own SSH k
 
 ### **Putty and PuttyGen: Your Toolkit**
 
-#### **Installing Putty**
+#### Installing Putty
 
-1. Download Putty from the official source: https://www.putty.org/
+1. Download Putty from the official source: [putty.org](https://www.putty.org/)
 2. Run the installer and follow the on-screen instructions to install it.
 
-#### **Generating Keys with PuttyGen**
+#### Steps to Generate and Use a Key Pair with PuttyGen
 
-1. Open PuttyGen (it’s included with Putty).
-2. **Generate a New Key Pair:** In the **PuttyGen** window, click **Generate**. You’ll be asked to move your mouse around the window to create randomness (entropy). This randomness is used to generate the key pair, so it’s essential for security.
-3. **Configure Your Key:** Once the key pair is generated, you’ll see a **Public Key** in the top field. Below that:
-   1. **Key Comment:** Enter a descriptive comment for your key. This is a label for your reference (e.g., `MyServerKey`). Avoid using spaces or special characters—stick to hyphens or underscores.
-   2. **Passphrase (Optional but Recommended):** For added security, you can add a passphrase to your private key. While this adds another layer of protection, it also means you'll need to enter this passphrase whenever you use the private key. It’s an important step to protect access to your server.
-4. **Save the Keys:**
-   1. **Private Key:** Click **Save private key** and store it in a secure location on your computer. This private key should never be shared. Treat it like a password and store it in a safe, encrypted location.
-   2. **Public Key:** Copy the **Public Key** from the PuttyGen window. This key is safe to share and should be added to your server to grant access.
-5. **Adding the Public Key to Your Server:** Access your server’s configuration and locate the **authorized_keys** file (usually in the `~/.ssh/` directory for the user you’ll log in as) and Paste the public key (the one that starts with `ssh-rsa`) into the **authorized_keys** file. Make sure the key is all on one line and there are no extra spaces.
+1. **Open PuttyGen**: Launch the program (it's part of the Putty suite).
+2. **Generate a New Key Pair**:
+   - In the PuttyGen window, click **Generate**.
+   - Move your mouse around the window to create randomness, which is essential for security.
+3. **Configure Your Key**:
+   - **Key Comment**: Add a descriptive label (e.g., `MyServerKey`) to identify the key. Use simple characters like hyphens or underscores.
+   - **Passphrase (Optional)**: Add a passphrase for extra security. This protects your private key and requires the passphrase whenever you use it.
+4. **Save Your Keys**:
+   - **Private Key**: Click **Save private key** and store it securely (like a password).
+   - **Public Key**: Copy the public key from the PuttyGen window.
+5. **Add the Public Key to Your Server**:
+   - Access your server and open the `~/.ssh/authorized_keys` file for the user account.
+   - Paste the public key (starting with `ssh-rsa`) into the file on a single line.
 
 <aside>
 🦾 Pro Tip: Use a naming convention like `my_server_private.ppk` and `my_server_public.pub` when you save your private and public keys. It’ll save your sanity.
@@ -128,7 +132,7 @@ The first time you connect, Putty will ask you to confirm the server’s fingerp
 
 ### **Connecting to Your Server**
 
-1. Download WinSCP: https://winscp.net/eng/download.php
+1. Download WinSCP: [winscp.net](https://winscp.net/eng/download.php)
 2. Enter your server’s **IP address**, **username**, and **port** (22 for SSH) and Import your private key if necessary.
 3. Import your private key if necessary. Alternatively, you can import saved Putty sessions by selecting **Tools > Import Sites > Putty > "your_putty_session"**.
 
