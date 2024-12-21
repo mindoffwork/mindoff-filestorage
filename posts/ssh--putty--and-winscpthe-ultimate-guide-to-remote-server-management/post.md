@@ -90,7 +90,7 @@ To make it easier, we’ll walk through the process of generating your own SSH k
 🦾 **Pro Tip:** Use a naming convention like `my_server_private.ppk` and `my_server_public.pub` when you save your private and public keys. It’ll save your sanity.
 </aside>
 
-!https://cdn.jsdelivr.net/gh/mindoffwork/mindoff-filestorage@root/images/screenshots/puttyGen_ss.png
+![Putty Key Generator Screenshot](https://cdn.jsdelivr.net/gh/mindoffwork/mindoff-filestorage@root/images/screenshots/puttyGen_ss.png)
 
 **Example: Accessing SSH on Google Compute Engine for Public Key**
 
