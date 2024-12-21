@@ -71,8 +71,7 @@ To make it easier, we’ll walk through the process of generating your own SSH k
 
 #### Installing Putty
 
-- Download Putty from the official source: [putty.org](https://www.putty.org/)
-- Run the installer and follow the on-screen instructions to install it.
+Download Putty from the official source: [putty.org](https://www.putty.org/). Run the installer and follow the on-screen instructions to install it.
 
 #### Steps to Generate and Use a Key Pair with PuttyGen
 
