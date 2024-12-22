@@ -112,10 +112,7 @@ And that’s it! You’re ready to connect. 🚀
 
 **What’s That Fingerprint Warning?**
 
-The first time you connect, Putty will ask you to confirm the server’s fingerprint. This is your server proving its identity.
-
-- **Click Yes** if it matches your server’s details or click **allow once** if you wish to review it every time you login.
-- **Click No** if you’re unsure or suspect foul play.
+The first time you connect, Putty will ask you to confirm the server’s fingerprint. This is your server proving its identity. **Click Yes** if it matches your server’s details or click **allow once** if you wish to review it every time you login. **Click No** if you’re unsure or suspect foul play.
 
 ![Putty Session Creation and Saving Screenshot](https://cdn.jsdelivr.net/gh/mindoffwork/mindoff-filestorage@root/images/screenshots/putty_connection_screen_ss.png)
 
