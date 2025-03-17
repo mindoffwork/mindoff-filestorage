@@ -1,24 +1,24 @@
 ## Ingredients & Mise en Place
 
-- [ ] **Toor Dal (Pigeon Pea Lentils):** 1 cup (120g), rinsed and soaked for at least 3 hours (or overnight)
-- [ ] **Water:** 4 cups
-- [ ] **Tomato:** 1 small, ripe, roughly chopped
-- [ ] **Spinach:** 1 bunch, washed and chopped (tender stems optional)
-- [ ] **Onion:** 1 medium, thinly sliced
-- [ ] **Ghee (or Butter):** 1 tbsp, for cooking
-- [ ] **Salt:** To taste, used during boiling and final seasoning
-- [ ] **Coriander or Parsley:** Fresh, for garnish
+1. **Toor Dal (Pigeon Pea Lentils):** 1 cup (120g), rinsed and soaked for at least 3 hours (or overnight)
+2. **Water:** 4 cups
+3. **Tomato:** 1 small, ripe, roughly chopped
+4. **Spinach:** 1 bunch, washed and chopped (tender stems optional)
+5. **Onion:** 1 medium, thinly sliced
+6. **Ghee (or Butter):** 1 tbsp, for cooking
+7. **Salt:** To taste, used during boiling and final seasoning
+8. **Coriander or Parsley:** Fresh, for garnish
 
-### **Tempering Mix**
+**Tempering Mix**
 
-- [ ] **Mustard Seeds:** 1 tsp, whole
-- [ ] **Urad Dal:** 1 tsp, for crunch
-- [ ] **Dried Chilies:** 2 medium, whole, for heat
+1. **Mustard Seeds:** 1 tsp, whole
+2. **Urad Dal:** 1 tsp, for crunch
+3. **Dried Chilies:** 2 medium, whole, for heat
 
-### **Spice Mix**
+**Spice Mix**
 
-- [ ] **Turmeric Powder:** ½ tsp
-- [ ] **Cumin Powder:** 1 tsp
+1. **Turmeric Powder:** ½ tsp
+2. **Cumin Powder:** 1 tsp
 
 ## Step 1: Preparing the Dal Spinach Blend
 
@@ -44,7 +44,7 @@
 - Blend in a **food processor** until evenly mixed but still textured. If using a **mixer grinder**, pulse **4-5 times for 2-second intervals**.
 
 <aside>
-🍽️ Meal Prep Tip: Store this mixture in the refrigerator for up to **3 days** or freeze for later use.
+🍽️ Meal Prep Tip: Store this mixture in the refrigerator for up to 3 days or freeze for later use.
 </aside>
 
 ## Step 2: Cooking the Dal 'n Spinach
