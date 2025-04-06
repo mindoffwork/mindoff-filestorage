@@ -2,10 +2,10 @@ In nature, plants grow freely. Roots stretch deep, dead matter enriches the soil
 
 ## Let’s Confirm if Our Plant Needs Repotting
 
-- **New Bought Plant:** If you're getting plants from a less-than-ideal nursery or scooped it out from land (hopefully yours 🙄), repotting is critical as the existing soil may lack essential nutrients or carry pathogens.
-- **Disease & Distress:** Yellowing leaves and stalled or slow growth are signs something's off below the surface.
-- **Maximum Growth:** Roots are circling the top of the soil, or the plant is pushing itself out of the pot.
-- **Compacted Soil:** Water is running right through the pot, meaning the soil is likely compacted and not retaining moisture properly.
+**New Bought Plant:** If you're getting plants from a less-than-ideal nursery or scooped it out from land (hopefully yours 🙄), repotting is critical as the existing soil may lack essential nutrients or carry pathogens.
+**Disease & Distress:** Yellowing leaves and stalled or slow growth are signs something's off below the surface.
+**Maximum Growth:** Roots are circling the top of the soil, or the plant is pushing itself out of the pot.
+**Compacted Soil:** Water is running right through the pot, meaning the soil is likely compacted and not retaining moisture properly.
 
 ## Types of Repotting
 
@@ -54,8 +54,8 @@ After repotting, water the plant until you see a small amount of water draining 
 
 ## 📖 Repotting Rules
 
-- **Repot only when necessary:** Typically, once a year for fast-growing plants and every 2–3 years for slow-growing ones.
-- **Use high-quality soil:** Avoid over-fertilizing by choosing the right soil mix for your plant type.
-- **Avoid oversized pots:** Bigger isn’t always better. Too much space can lead to over-watering and root rot.
+1. **Repot only when necessary:** Typically, once a year for fast-growing plants and every 2–3 years for slow-growing ones.
+2. **Use high-quality soil:** Avoid over-fertilizing by choosing the right soil mix for your plant type.
+3. **Avoid oversized pots:** Bigger isn’t always better. Too much space can lead to over-watering and root rot.
 
 Repotting doesn’t have to be complicated. By following a this approach, you provide your plants with the essentials they need to grow well without overwhelming them (or yourself) with extra steps. Repot only as needed, and your plant will have the room to thrive and grow beautifully in its new home.
