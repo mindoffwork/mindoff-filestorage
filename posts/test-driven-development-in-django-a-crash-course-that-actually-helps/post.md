@@ -11,10 +11,7 @@ Django uses Python’s `unittest` framework under the hood, with solid support f
 
 To run all tests:
 
-```
-# shell command
-python manage.py test
-```
+https://gist.github.com/mindoffwork/2ca155d61abfcaa6f50367f7b0e6d25c
 
 Django auto-discovers tests in `tests.py` or any file inside a `tests/` directory.
 
@@ -22,26 +19,11 @@ Django auto-discovers tests in `tests.py` or any file inside a `tests/` director
 
 Structure them by functionality to stay sane:
 
-```
-your_app/
-    tests/
-        test_models.py
-        test_views.py
-        test_forms.py
-        test_urls.py
-        test_serializers.py
-        test_commands.py
-```
+https://gist.github.com/mindoffwork/d35f3aade94be7b11a74e99118007348
 
 ## Step 3: Stop Writing Repetitive Setup (Use Factory Boy)
 
-Install it:
-
-```
-# shell command
-# install with pip
-pip install factory_boy
-```
+Install with pip via shell: `pip install factory_boy`
 
 Define factories:
 
@@ -104,13 +86,6 @@ https://gist.github.com/mindoffwork/c6cefe8be25d9c4514be8af3fa1d0b42
 
 Install coverage:
 
-```
-# shell command
-# install and run coverage
-pip install coverage
-coverage run manage.py test
-coverage report
-coverage html
-```
+https://gist.github.com/mindoffwork/88d3b3d14a8740c7d2279a5e260f58d4
 
 Start with one test at a time. Use Factory Boy. Follow the TDD cycle. Your code (and future you) will be much happier.
