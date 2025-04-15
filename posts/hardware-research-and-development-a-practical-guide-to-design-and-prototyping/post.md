@@ -12,9 +12,9 @@ Every product begins with an idea, but that idea needs to be turned into somethi
 
 - **2D CAD**: Open-source tools like **LibreCAD** are great for creating technical drawings. These tools offer precision without cost, making them ideal for flat, dimensional layouts.
 - **3D CAD Modeling**:
-  - **FreeCAD**: A powerful open-source CAD tool, FreeCAD is versatile and customizable for a wide range of design tasks.
-  - **Blender**: While mainly for animation, Blender also offers great tools for prototyping and 3D modeling.
-- **Rendering Software**: **Blender** is an open-source tool that can create photorealistic renders of your designs, helping you identify flaws before building physical prototypes.
+  1. **FreeCAD**: A powerful open-source CAD tool, FreeCAD is versatile and customizable for a wide range of design tasks.
+  2. **Blender**: While mainly for animation, Blender also offers great tools for prototyping and 3D modeling.
+- **Rendering Software**: [Blender](https://www.blender.org/) is an open-source tool that can create photorealistic renders of your designs, helping you identify flaws before building physical prototypes.
 
 ## 2. Small-Scale Prototyping: Testing Design Ideas
 
@@ -23,14 +23,14 @@ Small-scale prototypes are essential for testing your ideas before committing to
 ### Practical Techniques
 
 - **Foam or Cardboard Models**: These materials are perfect for checking dimensions, ergonomics, and overall shape. They’re cheap and easy to work with.
-    <aside>
-    💡 Pro Tip: Use a hot glue gun and masking tape to add detail and refine your prototypes.
-    </aside>
+<aside>
+💡 Pro Tip: Use a hot glue gun and masking tape to add detail and refine your prototypes.
+</aside>
 
 - **3D Printing**: Open-source software like **Ultimaker Cura** is great for preparing models for 3D printing. A 3D printer helps you test parts quickly and adjust them without much cost. If you don’t have a 3D printer and your design is complex enough to utilize a 3D printer, you can always rent a commercial 3D printing service for fraction of a cost.
-    <aside>
-    💡Pro Tip: Print at a lower resolution initially to save time and money while still gaining valuable insights.
-    </aside>
+<aside>
+💡Pro Tip: Print at a lower resolution initially to save time and money while still gaining valuable insights.
+</aside>
 
 - **Material Simulation**: To get a feel for how your product might behave in its final material, try using balsa wood, acrylic, or aluminum sheets.
 - **Clay and Foam Sculpting**: These are ideal for testing organic shapes and ergonomic designs. It’s a tactile way to refine your product and see how it fits in the hand.
