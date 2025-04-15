@@ -10,13 +10,9 @@ Every product begins with an idea, but that idea needs to be turned into somethi
 
 ### Going Digital: Open-Source Tools That Can Help
 
-- **2D CAD**: Open-source tools like **LibreCAD** are great for creating technical drawings. These tools offer precision without cost, making them ideal for flat, dimensional layouts.
-  **3D CAD Modeling**:
-
-1. **FreeCAD**: A powerful open-source CAD tool, FreeCAD is versatile and customizable for a wide range of design tasks.
-2. **Blender**: While mainly for animation, Blender also offers great tools for prototyping and 3D modeling.
-
-- **Rendering Software**: [Blender](https://www.blender.org/) is an open-source tool that can create photorealistic renders of your designs, helping you identify flaws before building physical prototypes.
+- **2D CAD**: Tools like [**LibreCAD**](https://librecad.org/) are excellent for creating technical drawings with precision. Ideal for flat, dimensioned layouts, it's a solid choice without the price tag.
+- **3D CAD Modeling**: [**FreeCAD**](https://www.freecad.org/) is a powerful and flexible open-source tool suited for a wide range of 3D design tasks. It’s highly customizable, making it great for everything from mechanical parts to architectural models.
+- **Rendering Software**: [**Blender**](https://www.blender.org/) is a feature-rich open-source rendering and animation suite. It’s capable of producing photorealistic visuals, which is incredibly useful for spotting design flaws before you commit to physical prototypes.
 
 ## 2. Small-Scale Prototyping: Testing Design Ideas
 
