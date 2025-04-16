@@ -44,7 +44,7 @@ Instead of stuffing everything into drawers and hoping for the best, set up clea
 - **Miscellaneous** – Anything that doesn’t fit the above
 
 <aside>
-💡 Keep a specific place in your home to act as a _physical inbox_. Whether it’s a tray, drawer, or file stand, make it the drop zone for unprocessed mail and documents. Sort it weekly or monthly to stay ahead of the clutter.
+💡 Keep a specific place in your home to act as a physical inbox. Whether it’s a tray, drawer, or file stand, make it the drop zone for unprocessed mail and documents. Sort it weekly or monthly to stay ahead of the clutter.
 </aside>
 
 ### 📧 Digital Email
