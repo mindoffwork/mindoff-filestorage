@@ -16,10 +16,7 @@ Once you define these as your _only_ communication channels, you can confidently
 Communication types can be categorized into:
 
 - **Messages** – General conversations that don’t require follow-up
-- **Reminders** – Emails asking you to take action. Either:
-  - Do it immediately
-  - Add to your to-do list or reminder app
-  - Then delete or archive the message
+- **Reminders** – Emails that require you to take action. You can either do it immediately, add it to your to-do list or reminder app, and then delete or archive the message.
 - **Transaction Updates** – Automatic messages like "Your payment was successful." Archive or save for reference
 - **Invoices & Reports** – Keep these for records or reimbursement
 - **Offers & Promotions** – Keep the valuable ones, delete the rest
