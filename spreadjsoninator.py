@@ -19,7 +19,8 @@ def generate_json_from_html(html):
     soup = BeautifulSoup(html, 'html.parser')
     elements = []
     current_html_content = ""
-
+    for a in soup.find_all('a'):
+        a['target'] = '_blank'
     for el in soup.contents:
         if el.name == 'script':
             if current_html_content:
